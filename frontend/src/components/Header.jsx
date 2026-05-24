@@ -51,10 +51,20 @@ export default function Header() {
           <a
             href="#"
             onClick={close}
-            className="font-display font-extrabold text-xl text-white tracking-tight relative z-50"
+            className="font-display font-extrabold text-[24px] text-white tracking-tight relative z-50"
             aria-label="AccessSim — início da página"
           >
-            Access<span className="text-brand-400">Sim</span>
+            <div className="flex items-center gap-2">
+              <img 
+                src="/logo-AccessSim.png" 
+                alt="Logo AccessSim" 
+                className="transition-transform duration-700 hover:rotate-[360deg]"
+                width={40} />
+              <div>
+                <span>Access</span>
+                <span className="text-brand-400">Sim</span>
+              </div>
+            </div>
           </a>
 
           {/* NAV DESKTOP */}
